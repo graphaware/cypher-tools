@@ -50,8 +50,8 @@ jobs:
 
       - name: Build and tag Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/my-spring-app:${{ env.VERSION }} .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/cypher-tools:${{ env.VERSION }} .
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/my-spring-app:${{ env.VERSION }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/cypher-tools:${{ env.VERSION }}
