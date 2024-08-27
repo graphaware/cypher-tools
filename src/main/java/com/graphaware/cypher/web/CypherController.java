@@ -16,7 +16,7 @@ public class CypherController {
         this.schemaEnforcerService = schemaEnforcerService;
     }
 
-    @PostMapping("/cypher")
+    @PostMapping("/enforceSchema")
     public ResponseEntity<CypherResponse> enforce(@RequestBody CypherRequest request) {
         return ResponseEntity.ok(
                 new CypherResponse(
