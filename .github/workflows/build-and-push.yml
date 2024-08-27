@@ -54,5 +54,5 @@ jobs:
         run: |
           docker buildx build \
             --platform linux/amd64,linux/arm64 \
-            --tag ${{ secrets.DOCKER_USERNAME }}/my-spring-app:${{ env.VERSION }} \
+            --tag ${{ secrets.DOCKER_USERNAME }}/cypher-tools:${{ env.VERSION }} \
             --push .
